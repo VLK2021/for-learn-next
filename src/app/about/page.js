@@ -1,6 +1,7 @@
 export const metadata = {
     title: "page about",
     description: "page about",
+    keywords: 'name, age'
 };
 
 
