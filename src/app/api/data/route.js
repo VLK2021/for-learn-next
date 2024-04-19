@@ -4,7 +4,6 @@ export async function GET(request) {
         age: 25,
         bio: 'some info'
     }
-
     return new Response(JSON.stringify(data));
 }
 
