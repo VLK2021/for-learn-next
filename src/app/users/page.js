@@ -1,6 +1,13 @@
 import {fetch} from "next/dist/compiled/@edge-runtime/primitives";
 
 
+export const metadata = {
+    title: "page users",
+    description: "page users",
+    keywords: 'user, name, age'
+};
+
+
 async function fetchData() {
     const res = await fetch('http://localhost:3000/api/data');
     return await res.json();
