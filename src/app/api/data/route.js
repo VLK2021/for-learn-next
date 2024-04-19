@@ -1,9 +1,8 @@
 export async function GET(request) {
-    const data = {
-        name: 'Bob',
-        age: 25,
-        bio: 'some info'
-    }
+    const data = [
+        {id: 'u1', name: 'Bob', age: 25, bio: 'some info'},
+        {id: 'u2', name: 'Vic', age: 35, bio: 'hfsj sdhjf dksj'},
+    ]
 
     return new Response(JSON.stringify(data));
 }
