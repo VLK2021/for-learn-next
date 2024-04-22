@@ -10,6 +10,7 @@ const navItems = [
 
 
 const Header = () => {
+
     return (
         <header>
             <strong>Learn NEXT</strong>
