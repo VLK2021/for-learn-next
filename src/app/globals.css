@@ -22,10 +22,15 @@ header a {
 
 a {
     text-decoration: none;
-    color: #cb2222;
+    color: red;
 }
 
 a:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: snow;
     text-decoration: underline;
 }
 

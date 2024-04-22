@@ -1,4 +1,12 @@
 import Link from "next/link";
+import {Navigation} from "./Navigation";
+
+
+const navItems = [
+    {label: "Home", href: "/"},
+    {label: "About", href: "/about"},
+    {label: "Users", href: "/users"}
+]
 
 
 const Header = () => {
@@ -6,9 +14,7 @@ const Header = () => {
         <header>
             <strong>Learn NEXT</strong>
             <nav>
-                <Link href={'/'}>Home</Link>
-                <Link href={'/about'}>About</Link>
-                <Link href={'/users'}>users</Link>
+                <Navigation navItems={navItems}/>
             </nav>
         </header>
     );
