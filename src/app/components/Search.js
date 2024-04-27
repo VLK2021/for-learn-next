@@ -3,7 +3,7 @@ import {useState} from "react";
 
 
 
-const Search = () => {
+const Search = ({setPosts}) => {
     const [search, setSearch] = useState('');
 
     const handleSubmit = async (event) => {
@@ -11,8 +11,7 @@ const Search = () => {
 
         const res = await fetch((`https://jsonplaceholder.typicode.com/posts?q=${search}`));
         const posts = await res.json();
-        console.log(posts);
-
+        setPosts(posts);
     }
 
 
