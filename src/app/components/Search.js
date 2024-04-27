@@ -1,18 +1,18 @@
 'use client'
 import {useState} from "react";
 
-// import {getPostBySearch} from "../../services/getPostsHelpers";
 
 
 const Search = () => {
     const [search, setSearch] = useState('');
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // const posts = await getPostBySearch(search);
-        // console.log(posts);
-        console.log(event.target.value);
+        const res = await fetch((`https://jsonplaceholder.typicode.com/posts?q=${search}`));
+        const posts = await res.json();
+        console.log(posts);
+
     }
 
 
