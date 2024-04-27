@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Search from "./components/Search";
 
 
 async function fetchData() {
@@ -15,6 +16,10 @@ export default async function Home() {
     return (
         <main>
             <h1>I want learn NEXT</h1>
+
+            <section className={'searchBlock'}>
+                <Search/>
+            </section>
 
             {posts.map(el => (
                     <div key={el.id} className={'post'}>
