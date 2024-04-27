@@ -39,7 +39,6 @@ import Search from "./components/Search";
 import {useEffect, useState} from "react";
 
 
-
 export default function Home() {
    const [posts, setPosts] = useState([]);
 
