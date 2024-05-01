@@ -9,8 +9,6 @@ const Navigation = ({navItems}) => {
     const pathname = usePathname();
     const session = useSession();
 
-    console.log(session);
-
 
     return <>
         {navItems.map((link) => {
