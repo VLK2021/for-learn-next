@@ -68,3 +68,32 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.5rem 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form button, button {
+    background-color: blue;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+.login-form {
+    display: grid;
+    gap: 1rem;
+}
