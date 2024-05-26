@@ -1,10 +1,12 @@
-export default function Home() {
+import Header from "./components/Header/Header";
 
+
+export default function Home() {
 
 
     return (
         <main>
-            <h1>I want learn NEXT</h1>
+
         </main>
     );
 }
