@@ -19,6 +19,11 @@ a:hover {
 .active {
     color: snow;
     text-decoration: underline;
+    list-style: none;
+}
+
+.active > a {
+    color: snow;
 }
 
 

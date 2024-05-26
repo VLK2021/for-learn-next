@@ -1,4 +1,3 @@
-import Header from "./components/Header/Header";
 
 
 export default function Home() {
@@ -6,7 +5,7 @@ export default function Home() {
 
     return (
         <main>
-
+            <h1>It is my learn app</h1>
         </main>
     );
 }
