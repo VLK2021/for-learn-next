@@ -1,4 +1,6 @@
 import styles from './user.module.css';
+import {userService} from "../../services/user-service";
+import User from "../components/User/User";
 
 
 export const metadata = {
@@ -9,13 +11,19 @@ export const metadata = {
 
 
 const Users = async () => {
+    const usersData = await userService.getAll();
+    console.log(usersData.data);
 
+    if (usersData) {
+        return (
+            <main className={styles.wrap}>
+                {usersData.data.map(obj => <User user={obj}/>)}
+            </main>
+        );
+    } else {
+        return null;
+    }
 
-    return (
-        <main className={styles.wrap}>
-           Users
-        </main>
-    );
 };
 
 export default Users;
