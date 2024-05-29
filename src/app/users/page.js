@@ -8,7 +8,9 @@ export const metadata = {
 };
 
 
-const Users = () => {
+const Users = async () => {
+
+
     return (
         <main className={styles.wrap}>
            Users
