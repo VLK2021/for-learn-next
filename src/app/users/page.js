@@ -12,7 +12,6 @@ export const metadata = {
 
 const Users = async () => {
     const usersData = await userService.getAll();
-    console.log(usersData.data);
 
     if (usersData) {
         return (
