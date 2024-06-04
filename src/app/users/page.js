@@ -1,4 +1,4 @@
-import styles from './user.module.css';
+import styles from './users.module.css';
 import {userService} from "../../services/user-service";
 import User from "../components/User/User";
 
@@ -16,7 +16,7 @@ const Users = async () => {
     if (usersData) {
         return (
             <main className={styles.wrap}>
-                {usersData.data.map(obj => <User user={obj}/>)}
+                {usersData.data.map(obj => <User key={obj.id} user={obj}/>)}
             </main>
         );
     } else {

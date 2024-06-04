@@ -1,4 +1,5 @@
 import styles from './single-user.module.css';
+import {userService} from "../../../services/user-service";
 
 
 export const metadata = {
@@ -8,13 +9,19 @@ export const metadata = {
 };
 
 
-const UserById = ({params: {id}}) => {
+const UserById = async ({params: {id}}) => {
+    const userData = await userService.getSingleUser(id)
 
-    return(
-        <main className={styles.wrap}>
-            {id}
-        </main>
-    )
+    if (userData) {
+        return (
+            <main className={styles.wrap}>
+                {userData.data.name}
+            </main>
+        )
+    } else {
+        return null;
+    }
+
 }
 
 export default UserById;
