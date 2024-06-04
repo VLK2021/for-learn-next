@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from './single-user.module.css';
 import {userService} from "../../../services/user-service";
 
@@ -15,6 +17,12 @@ const UserById = async ({params: {id}}) => {
     if (userData) {
         return (
             <main className={styles.wrap}>
+                <section>
+                    <Link href={'/users'}>
+                        <button className={styles.btn}>back</button>
+                    </Link>
+                </section>
+
                 {userData.data.name}
             </main>
         )
