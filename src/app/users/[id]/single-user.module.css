@@ -1,10 +1,36 @@
 .wrap {
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
     width: 10rem;
     border-radius: 0.5rem;
     margin: 1rem;
+}
+
+.blockUser {
+    width: 50%;
+    background: lightgrey;
+}
+
+.title{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+
+.info{
+    width: 100%;
+    padding: 0 1rem;
+    color: blue;
+}
+
+.info1{
+    padding: 0 2rem;
 }

@@ -11,6 +11,9 @@ const UlForHeader = () => {
 
     return (
         <ul className={styles.ul}>
+            <li className={classNames(styles.li, {active: pathname === '/' })}>
+                <Link href={"/"}>Home</Link>
+            </li>
             <li className={classNames(styles.li, {active: pathname === '/users' })}>
                 <Link href={"/users"}>Users</Link>
             </li>

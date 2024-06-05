@@ -1,0 +1,6 @@
+.wrap{
+    width: 70%;
+    background: lightgrey;
+    box-shadow: 0.2rem 0.2rem 0.2rem gray;
+    margin-bottom: 0.5rem;
+}
