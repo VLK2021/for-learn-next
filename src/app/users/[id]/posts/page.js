@@ -2,6 +2,7 @@ import {userService} from "../../../../services/user-service";
 
 import styles from './user-posts.module.css';
 import UserPost from "../../../components/UserPosts/UserPost";
+import Link from "next/link";
 
 
 export const metadata = {
@@ -17,6 +18,12 @@ const UserAllPosts = async ({params: {id}}) => {
     if (userPostsData) {
         return (
             <main className={styles.wrap}>
+                <section>
+                    <Link href={`/users/${id}`}>
+                        <button className={styles.btn}>back</button>
+                    </Link>
+                </section>
+
                 {userPostsData.data.map(obj => <UserPost key={obj.userId} post={obj}/>)}
             </main>
         );
