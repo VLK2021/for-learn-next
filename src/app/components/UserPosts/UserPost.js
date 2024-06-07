@@ -7,7 +7,10 @@ const UserPost = ({post}) => {
 
     return (
         <main className={styles.wrap}>
-            {title}
+            <p>{userId}</p>
+            <p>{id}</p>
+            <p>{title}</p>
+            <p>{body}</p>
         </main>
     );
 };
